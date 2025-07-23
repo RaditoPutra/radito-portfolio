@@ -73,7 +73,7 @@ export default function Portfolio() {
     home: useRef<HTMLDivElement>(null),
     about: useRef<HTMLDivElement>(null),
     experience: useRef<HTMLDivElement>(null),
-    projects: useRef<HTMLDivElement>(null), // MODIFIKASI: Ref untuk projek
+    projects: useRef<HTMLDivElement>(null),
     education: useRef<HTMLDivElement>(null),
     skills: useRef<HTMLDivElement>(null),
     contact: useRef<HTMLDivElement>(null),
@@ -128,7 +128,7 @@ export default function Portfolio() {
           if(item === 'Home') return 'home';
           if(item === 'About') return 'about';
           if(item === 'Pengalaman') return 'experience';
-          if(item === 'Projek') return 'projects'; // MODIFIKASI: Tambah mapping untuk projek
+          if(item === 'Projek') return 'projects';
           if(item === 'Pendidikan') return 'education';
           if(item === 'Skills') return 'skills';
           if(item === 'Kontak') return 'contact';
@@ -161,7 +161,6 @@ export default function Portfolio() {
     }
   }, [sectionRefs])
 
-  // MODIFIKASI: Perbarui mapping untuk konsistensi
   const navItemMapping: { [key: string]: string } = {
     'Home': 'home',
     'About': 'about',
@@ -241,7 +240,6 @@ export default function Portfolio() {
       <main>
         {/* Bagian Hero */}
         <section id="home" ref={sectionRefs.home} className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-            {/* ... Konten Hero Section Anda tidak berubah ... */}
             <div className="absolute inset-0 bg-dots opacity-10"></div>
             <div className="text-center z-10 px-4">
                 <div className="mb-8 animate-scale-in">
@@ -306,7 +304,6 @@ export default function Portfolio() {
 
         {/* Bagian Tentang Saya */}
         <section id="about" ref={sectionRefs.about} className="py-20 px-4 relative z-10">
-            {/* ... Konten About Section Anda tidak berubah ... */}
             <div className="max-w-6xl mx-auto">
                 <SectionHeading>Tentang Saya</SectionHeading>
                 <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -358,7 +355,6 @@ export default function Portfolio() {
         
         {/* Bagian Pengalaman & Organisasi */}
         <section id="experience" ref={sectionRefs.experience} className="py-20 px-4 bg-[#1E272E]/30 relative z-10">
-            {/* ... Konten Experience Section Anda tidak berubah ... */}
             <div className="max-w-6xl mx-auto">
                 <SectionHeading>Pengalaman & Organisasi</SectionHeading>
                 <div className="mb-16">
@@ -420,6 +416,28 @@ export default function Portfolio() {
                                 </div>
                             </div>
                         </InViewAnimated>
+                        <InViewAnimated animationClass="animate-fade-in-up" delay={0.5}>
+                            <div className="bg-[#2D3A44]/50 p-6 rounded-xl border border-[#DA9100]/20 hover:border-[#F7C59F]/40 transition-colors duration-200">
+                                <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                                    <div>
+                                        <h4 className="text-xl font-semibold text-white">Ketua Divisi Perlengkapan</h4>
+                                        <p className="text-[#DA9100]">Atma Jaya Movement</p>
+                                    </div>
+                                    <span className="text-gray-400 text-sm mt-2 md:mt-0">2024</span>
+                                </div>
+                            </div>
+                        </InViewAnimated>
+                        <InViewAnimated animationClass="animate-fade-in-up" delay={0.7}>
+                            <div className="bg-[#2D3A44]/50 p-6 rounded-xl border border-[#DA9100]/20 hover:border-[#F7C59F]/40 transition-colors duration-200">
+                                <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                                    <div>
+                                        <h4 className="text-xl font-semibold text-white">Anggota, Komunitas Anti Korupsi</h4>
+                                        <p className="text-[#DA9100]">Fakultas Hukum, Universitas Atma Jaya Yogyakarta</p>
+                                    </div>
+                                    <span className="text-gray-400 text-sm mt-2 md:mt-0">2023 – 2024</span>
+                                </div>
+                            </div>
+                        </InViewAnimated>
                     </div>
                 </div>
             </div>
@@ -427,7 +445,6 @@ export default function Portfolio() {
 
         {/* Bagian Pendidikan */}
         <section id="education" ref={sectionRefs.education} className="py-20 px-4 bg-[#1E272E]/30 relative z-10">
-            {/* ... Konten Education Section Anda tidak berubah ... */}
             <div className="max-w-6xl mx-auto">
                 <SectionHeading>Pendidikan</SectionHeading>
                 <div className="space-y-8">
@@ -435,7 +452,7 @@ export default function Portfolio() {
                         <div className="bg-[#2D3A44]/50 p-6 rounded-xl border border-[#DA9100]/20 hover:border-[#F7C59F]/40 transition-colors duration-200">
                             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                                 <div>
-                                    <h3 className="text-xl font-semibold text-white">Sarjana Teknik Informatika</h3>
+                                    <h3 className="text-xl font-semibold text-white">Sarjana Informatika</h3>
                                     <p className="text-[#DA9100]">Universitas Atma Jaya Yogyakarta</p>
                                 </div>
                                 <span className="text-gray-400 text-sm mt-2 md:mt-0">Saat ini</span>
@@ -459,9 +476,8 @@ export default function Portfolio() {
 
         {/* Bagian Keahlian */}
         <section id="skills" ref={sectionRefs.skills} className="py-20 px-4 relative z-10">
-            {/* ... Konten Skills Section Anda tidak berubah ... */}
             <div className="max-w-6xl mx-auto">
-                <SectionHeading>Keahlian</SectionHeading>
+                <SectionHeading>Skills</SectionHeading>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {skills.map((skill, index) => (
                         <InViewAnimated key={skill.name} animationClass="animate-fade-in-up" delay={index * 0.1}>
@@ -489,7 +505,7 @@ export default function Portfolio() {
         {/*Bagian Projek */}
         <section id="projects" ref={sectionRefs.projects} className="py-20 px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <SectionHeading>Projek Saya</SectionHeading>
+            <SectionHeading>Project Saya</SectionHeading>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
                 <InViewAnimated
@@ -552,7 +568,6 @@ export default function Portfolio() {
 
         {/* Bagian Kontak */}
         <section id="contact" ref={sectionRefs.contact} className="py-20 px-4 bg-[#1E272E]/30 relative z-10">
-            {/* ... Konten Contact Section Anda tidak berubah ... */}
             <div className="max-w-6xl mx-auto text-center">
                 <SectionHeading>Hubungi Saya</SectionHeading>
                 <InViewAnimated animationClass="animate-fade-in-up" delay={0.1}>
