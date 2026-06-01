@@ -107,7 +107,6 @@ export default function Portfolio() {
       imageUrl: "/images/sirg.png", 
       techStack: ["Laravel", "React", "MySQL", "JavaScript", "Tailwind CSS"],
       liveUrl: "https://sirg-inf.uajy.ac.id/", 
-      repoUrl: "#", 
     },
     {
       title: "Peta Interaktif Potensi Desa Geluntung",
