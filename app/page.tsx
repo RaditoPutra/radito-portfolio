@@ -103,7 +103,7 @@ export default function Portfolio() {
     },
     {
       title: "Sistem Informasi Research Group (Kerja Praktik)",
-      description: "Membangun platform manajemen riset berbasis web untuk Departemen Informatika UAJY. Sistem ini mengelola data kelompok riset, publikasi, dan anggota dengan mengimplementasikan hak akses multi-role yang disesuaikan untuk 3 level user: Dosen, Mahasiswa, dan Koordinator Research Group.",
+      description: "Membangun platform manajemen riset berbasis web untuk Departemen Informatika Universitas Atma Jaya Yogyakarta. Sistem ini mengelola data kelompok riset, publikasi, dan anggota dengan mengimplementasikan hak akses multi-role yang disesuaikan untuk 3 level user: Dosen, Mahasiswa, dan Koordinator Research Group.",
       imageUrl: "/images/sirg.png", 
       techStack: ["Laravel", "React", "MySQL", "JavaScript", "Tailwind CSS"],
       liveUrl: "https://sirg-inf.uajy.ac.id/", 
