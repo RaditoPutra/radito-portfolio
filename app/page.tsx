@@ -102,12 +102,12 @@ export default function Portfolio() {
       repoUrl: "https://github.com/gbrl-mar/reusemart", 
     },
     {
-      title: "Layar Atma - Website Tiket Bioskop",
-      description: "Berkolaborasi dalam tim 4 orang untuk membangun 'Layar Atma', sebuah aplikasi web pemesanan tiket bioskop. Berkontribusi pada pengembangan full-stack, mulai dari backend API hingga antarmuka pengguna (frontend) yang interaktif menggunakan React. Proyek ini mencakup manajemen film oleh admin, daftar film, dan sistem profil pengguna.",
-      imageUrl: "/images/bioskop.png",
-      techStack: ["React", "JavaScript", "Bootstrap", "PHP", "MySQL"],
-      liveUrl: "#", 
-      repoUrl: undefined, 
+      title: "Sistem Informasi Research Group (Kerja Praktik)",
+      description: "Membangun platform manajemen riset berbasis web untuk Departemen Informatika UAJY. Sistem ini mengelola data kelompok riset, publikasi, dan anggota dengan mengimplementasikan hak akses multi-role yang disesuaikan untuk 3 level user: Dosen, Mahasiswa, dan Koordinator Research Group.",
+      imageUrl: "/images/sirg.png", 
+      techStack: ["Laravel", "React", "MySQL", "JavaScript", "Tailwind CSS"],
+      liveUrl: "https://sirg-inf.uajy.ac.id/", 
+      repoUrl: "#", 
     },
     {
       title: "Peta Interaktif Potensi Desa Geluntung",
